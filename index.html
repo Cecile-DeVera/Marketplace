@@ -12,43 +12,49 @@
       <div class="jumbotron">
         <h1>Best Products Online</h1>
       </div>
-      <form>
-        <div class="row">
-          <div class="col-6">
-            <div class="form-group">
-              <label for="userName">Your name:</label>
-              <input id="userName" class="form-control" type="text">
+      <div id="userInfo">
+        <form>
+          <div class="row">
+            <div class="col-6">
+              <div class="form-group">
+                <label class="userLabel" for="userName">Name:</label>
+                <input id="userName" class="form-control" type="text">
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label class="userLabel" for="userStreet">Street:</label>
+                <input id="userStreet" class="form-control" type="text">
+              </div>
             </div>
           </div>
-          <div class="col-6">
-            <div class="form-group">
-              <label for="userStreet">Street:</label>
-              <input id="userStreet" class="form-control" type="text">
+          <div class="row">
+            <div class="col-4">
+              <div class="form-group">
+                <label class="userLabel" for="userCity">City:</label>
+                <input id="userCity" class="form-control" type="text">
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="form-group">
+                <label class="userLabel" for="userState">State:</label>
+                <input id="userState" class="form-control" type="text" maxlength="2">
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="form-group">
+                <label class="userLabel" id="ziplabel" for="userZipcode">Zipcode:</label>
+                <input id="userZipcode" class="form-control" type="text" maxlength="5">
+              </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-4">
-            <div class="form-group">
-              <label for="userCity">City:</label>
-              <input id="userCity" class="form-control" type="text">
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="form-group">
-              <label for="userState">State:</label>
-              <input id="userState" class="form-control" type="text" maxlength="2">
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="form-group">
-              <label for="userZipcode">Zipcode:</label>
-              <input id="userZipcode" class="form-control" type="text" maxlength="5">
-            </div>
-          </div>
-        </div>
-      </form>
-      <button type="submit" class+"btn">Submit</button>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+      <div id="receipt">
+        <p id="userNameReceipt"></p>
+        <p id="userAddressReceipt"></p>
+      </div>
     </div>
   </body>
 </html>

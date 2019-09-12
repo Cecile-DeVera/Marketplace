@@ -2,3 +2,6 @@
   text-align: center;
   font-style: italic;
 }
+#receipt {
+  display: none;
+}
